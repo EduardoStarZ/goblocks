@@ -11,7 +11,7 @@ config:
 install: build
 	sudo cp -f goblocks /usr/local/bin/goblocks; \
 	sudo chmod 755 /usr/local/bin/goblocks
-
+	cp goblocks.json ~/.config/goblocks.json
 uninstall:
 	sudo rm -f /usr/local/bin/goblocks
 	rm -f ${HOME}/.config/goblocks.json
